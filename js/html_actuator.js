@@ -91,15 +91,15 @@ HTMLActuator.prototype.addTile = function (tile) {
 };
 
 HTMLActuator.prototype.gematria = function (value) {
-	var ones = ["", "ΰ", "α", "β", "γ", "δ", "ε", "ζ", "η", "θ"];
-	var tens = ["", "ι", "λ", "μ", "ξ", "π", "ρ", "ς", "τ", "φ"];
-	var hunds = ["", "χ", "ψ", "ω", "ϊ", "ϊχ", "ϊψ", "ϊω", "ϊϊ", "ϊϊχ"];
+	var ones = ["", "Χ", "Χ‘", "Χ’", "Χ“", "Χ”", "Χ•", "Χ–", "Χ—", "Χ"];
+	var tens = ["", "Χ™", "Χ›", "Χ", "Χ", "Χ ", "Χ΅", "ΧΆ", "Χ¤", "Χ¦"];
+	var hunds = ["", "Χ§", "Χ¨", "Χ©", "Χª", "ΧªΧ§", "ΧªΧ¨", "ΧªΧ©", "ΧªΧª", "ΧªΧªΧ§"];
 	var newVal = "";
 	
 	if(value<0 || value>999999)
 		return value;
 	else if(value==0)
-		return "ΰτρ";
+		return "ΧΧ¤Χ΅";
 	else if(value<10)
 		newVal = ones[value];
 	else if(value<100)
@@ -112,8 +112,8 @@ HTMLActuator.prototype.gematria = function (value) {
 		newVal = tens[value.toString().charAt(0)]+ones[value.toString().charAt(1)]+"'"+hunds[value.toString().charAt(2)]+tens[value.toString().charAt(3)]+ones[value%10];
 	else if(value<1000000)
 		newVal = hunds[value.toString().charAt(0)]+tens[value.toString().charAt(1)]+ones[value.toString().charAt(2)]+"'"+hunds[value.toString().charAt(3)]+tens[value.toString().charAt(4)]+ones[value%10];
-	newVal = newVal.replace("ιδ", "θε");
-	newVal = newVal.replace("ιε", "θζ");
+	newVal = newVal.replace("Χ™Χ”", "ΧΧ•");
+	newVal = newVal.replace("Χ™Χ•", "ΧΧ–");
 	return newVal;
 };
 
