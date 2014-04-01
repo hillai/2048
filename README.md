@@ -9,4 +9,4 @@ Changes and improvements are more than welcome! Feel free to fork and open a pul
 You can find the same information in the [contributing guide](https://github.com/hillai/2048/blob/master/CONTRIBUTING.md).
 
 ## License
-Like 2048, this game is licensed under the [MIT license](https://github.com/hillai/2048/blob/master/LICENSE.txt).
+Like the original 2048, this game is licensed under the [MIT license](https://github.com/hillai/2048/blob/master/LICENSE.txt).
