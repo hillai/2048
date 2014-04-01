@@ -73,6 +73,13 @@
       <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same Hebrew letter touch, they <strong>merge into one!</strong>
     </p>
     <hr>
+    <ul>
+    <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></li>
+    <li><a href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + wwwcodeURIComponwwwt(window.location); return false"> <img src="http://www.reddit.com/static/spreddit7.gif" alt="submit to reddit" border="0" /> </a></li>
+    <li><div class="fb-like" data-href="http://hillai.github.io/2048/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+    <li><div class="fb-share-button" data-href="http://hillai.github.io/2048/" data-type="button_count"></div></li>
+    </ul>
+    <hr>
     <p>
     Hebraized by <a href="https://github.com/hillai" target="_blank">Hillai</a>. Based on <a href="http://gabrielecirulli.github.io/2048/" target="_blank">2048</a> created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli</a>, based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer</a>.
     </p>
@@ -88,5 +95,15 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
+  
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  	if (d.getElementById(id)) return;
+  	js = d.createElement(s); js.id = id;
+  	js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+  	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </body>
 </html>
