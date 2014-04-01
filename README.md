@@ -1,4 +1,4 @@
-# 2048: Gematria
+# ב'מח
 A Hebrew/Gematria version of Gabriele Cirulli's 2048.
 
 Made just for fun. [Play it here!](http://hillai.github.io/2048/)
